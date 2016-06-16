@@ -1,0 +1,8 @@
+﻿<template>
+    <li class="navigation-item">
+        <a href="${navigationItem.RouteName}"><i class="iconfont ${navigationItem.Icon}"></i><i class="iconfont iconfont-arrow-down pull-right"></i><span class="nav-name">${navigationItem.Name}</span></a>
+        <ul if.bind="navigationItem.ChildNavigationItems.length > 0" class="navigation-group">
+            <navigationitem repeat.for="childNavigationItem of navigationItem.ChildNavigationItems" current.bind="childNavigationItem"></navigationitem>
+        </ul>
+    </li>
+</template>

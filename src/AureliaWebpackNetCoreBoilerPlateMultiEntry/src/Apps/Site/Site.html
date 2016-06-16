@@ -1,0 +1,10 @@
+<template>
+    <require from="../../Components/Navigation/Navigation"></require>
+
+    <div class="ce-body">
+        <Navigation router.bind="router"></Navigation>
+        <div class="ce-site ce-site-${module} ce-site-${module}-${page}">
+            <router-view></router-view>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,36 @@
+<template>
+    <require from="./navigationitem"></require>
+    <header id="header" class="header navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a class="navigation-toggler" href="#"><i class="iconfont iconfont-menu"></i><i class="iconfont iconfont-caret-down"></i><span>menu</span></a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown text-normal nav-profile">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>Ryan</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                            <a href.bind="Logout">
+                                <i class="iconfont iconfont-exit"></i>
+                                <span>Log Out</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="navbar-header">
+                <div class="navbar-brand">ADMIN CLOUD</div>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <div data-scrollbar="true" data-height="100%">
+            <ul class="navigation-group">
+                <navigationitem repeat.for="navigationItem of navigationItems" navigation-item.bind="navigationItem"></navigationitem>
+            </ul>
+            <div class="navigation-condense"><a href="#" class="navigation-condense-btn"><i class="iconfont iconfont-arrowleft"></i></a></div>
+        </div>
+    </nav>
+</template>

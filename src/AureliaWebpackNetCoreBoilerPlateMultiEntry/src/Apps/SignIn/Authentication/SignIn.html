@@ -1,0 +1,11 @@
+﻿<template>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <div class="container">
+        <div>${UserName}</div>
+        <input type="text" placeholder="Username"  value.bind="user.userName" />
+        <input type="password" placeholder="Password"value.bind="user.password" />
+        <button type="button" class="btn btn-primary" click.delegate="signIn()">Sign In</button> 
+    </div>
+</template>

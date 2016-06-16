@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+src/AureliaWebpackSkeleton/node_modules/
+src/AureliaWebpackSkeleton/wwwroot/dist/
+src/AureliaWebpackSkeleton/wwwroot/build/
+src/AureliaWebpackSkeleton/obj/
+.idea/
+src/AureliaWebpackSkeleton/bin/
